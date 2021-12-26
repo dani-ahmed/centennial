@@ -1,0 +1,25 @@
+/*
+app.css
+Daniyal Ahmed
+301152472
+*/
+
+body {
+    background-color:white;
+    color: black;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bold {
+    font-weight: bold;
+}
+
+table, th, td
+{
+  border: 0;
+}
+table
+{
+  border-collapse:collapse;
+}

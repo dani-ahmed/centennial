@@ -1,0 +1,39 @@
+﻿body {
+	font-family: Georgia, serif;
+	margin-left: auto;
+	margin-right: auto;
+	width: 980px;
+}
+
+h1 {
+
+
+	font-size: 1.5em;
+	font-variant: small-caps;
+	text-transform: capitalize;
+	height: 30px;
+	margin-left:auto;
+	margin-right:auto;
+	color:darkblue;
+}
+
+
+
+.fieldLabel {
+	color: #3E5702;
+	vertical-align: top;
+	text-align: right;
+}
+
+label {
+	width: 490px;
+	float: left;
+	text-align: right;
+	color:darkblue;
+}
+fieldset {
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px gray;
+	border: thick solid #3E5702;
+	margin-bottom: 8px;
+}

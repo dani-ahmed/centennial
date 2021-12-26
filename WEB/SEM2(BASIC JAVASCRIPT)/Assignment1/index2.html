@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>BMR CALCULATOR</title>
+    <link href="bmr.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Jockey One' rel='stylesheet'>
+</head>
+<body>
+    <div>
+        <form>
+            <h1>IMPERIAL BMR AND TEE CALCULATOR</h1>
+            <h2><a href="index.html">GO TO METRIC</a></h2>
+            <h2>
+                This is a page designed to calculate someones BMR using the Harris-Benedict
+                Equation (Basal Metabolic Rate), and to measure the approximate daily kilocalorie
+                intake to maintain current body weight
+            </h2>
+            <label for="name">
+                Name<br />
+                <input type="text" name="name" id="name" required/>
+            </label>
+            <br />
+            <label for="gender">
+                Gender<br />
+                <select id="gender" name="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </label>
+            <br />
+
+            <label class="label" for="age">
+                Age<br />
+                <input type="number" id="age" name="age" min="0" max="100" required />
+            </label>
+            <br />
+            <label class="label" for="height">
+                Height in INCHES<br />
+                <input type="number" name="height" id="height" required min="1" max="100" />
+            </label>
+            <br />
+            <label class="label" for="weight">
+                Weight in POUNDS<br />
+                <input type="number" id="weight" name="weight" required min="1" max="200" />
+            </label>
+            <br />
+            <br />
+            <label>Activity Level</label><br />
+            <input type="radio" value="1.53" name="activity" id="activityLevel1" /><label for="activityLevel1">Sedentary or light activity</label><br />
+            <input type="radio" value="1.76" name="activity" id="activityLevel2" /><label for="activityLevel2">Active or moderately active</label><br />
+            <input type="radio" value="2.25" name="activity" id="activityLevel3" /><label for="activityLevel3">Vigourously active</label><br />
+            <br />
+            <input type="submit" id="submitImperial" value="Calculate BMR" />
+        </form>
+
+        <script src="bmr.js" type="text/javascript"></script>
+    </div>
+</body>
+</html>

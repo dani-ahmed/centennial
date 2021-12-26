@@ -1,0 +1,83 @@
+  <!--Main Navigation-->
+  <nav class="navbar sticky-top navbar-collapse navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><img src="/assets/images/logo.png" style="width:150x;height:100px;" alt="logo"></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
+
+          <li class="nav-item">
+            <% if (title == "Home"){ %>
+            <a class="nav-link active">
+            <% } else { %>
+            <a class="nav-link" href="/home">
+            <% } %>
+            <i class="fas fa-home"></i> Home </a>
+          </li>
+
+          <li class="nav-item">
+            <% if (title == "About"){ %>
+            <a class="nav-link active">
+            <% } else { %>
+            <a class="nav-link" href="/about">
+            <% } %>
+            <i class="fas fa-info"></i> About</a>
+          </li>
+
+          <li class="nav-item">
+            <% if (title == "Products"){ %>
+            <a class="nav-link active">
+            <% } else { %>
+            <a class="nav-link" href="/projects">
+            <% } %>
+            <i class="fas fa-box"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <% if (title == "Services"){ %>
+            <a class="nav-link active">
+            <% } else { %>
+            <a class="nav-link" href="/services">
+            <% } %>
+            <i class="fas fa-tools"></i> Services</a>
+          </li>
+
+          <li class="nav-item">
+            <% if (title == "Contact"){ %>
+            <a class="nav-link active">
+            <% } else { %>
+            <a class="nav-link" href="/contact">
+            <% } %>
+            <i class="fas fa-phone"></i> Contact</a>
+          </li>
+          <li class="nav-item">
+            <% if (title == "Business Contact List"){ %>
+            <a class="nav-link active">
+            <% } else { %>
+            <a class="nav-link" href="/users/list">
+            <% } %>
+            <i class="fas fa-book"></i> Contact List </a>
+          </li>
+          <% if(typeof displayName == 'string' && displayName) { %>
+            <li class="navbar-text"><i class="fas fa-door"></i>Welcome, <%= displayName %></li>
+              <li class="nav-item">
+                <a href="/users/logout" class="nav-link">
+                  <i class="fas fa-door"></i>
+                  Logout
+                </a>
+            </li>
+          <% } else { %>
+            <li class="nav-item">
+              <a href="/users/login" class="nav-link">
+                <i class="fas fa-door"></i>
+                Login
+              </a>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  </nav>

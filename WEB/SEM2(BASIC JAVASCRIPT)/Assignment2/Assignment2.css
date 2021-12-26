@@ -1,0 +1,23 @@
+﻿html, body {
+    height: 100%;
+    text-align: center;
+    width: auto;
+    color: blue;
+    margin: auto;
+    font-family: 'Jockey One';
+    font-size: 16px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+label {
+    font-size: 20px;
+}
+
+#gender, #age, #height, #weight {
+    width: 100px;
+}

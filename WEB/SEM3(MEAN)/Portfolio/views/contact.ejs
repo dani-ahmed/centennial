@@ -1,0 +1,27 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+  <!--Main Content-->
+<div class="jumbotron">
+<h1 class="display-4">Contact me!</h1>
+<form action="/home">
+    <label>First Name</label><br>
+    <input type="text" name="fname" required="required" size="20" tabindex="1"><br>
+    <label>Last Name</label><br>
+    <input type="text" name="lname" required="required" size="20" tabindex="1"><br>
+    <label>Phone</label><br>
+    <input type="text" name="phone" required="required" size="20" tabindex="2"><br>
+    <label>Email</label><br>
+    <input type="email" name="email" required="required" tabindex="3"><br>
+    <label>Message</label><br>
+    <textarea cols="50" name="requirements" rows="7" tabindex="5"></textarea><br>
+
+    <label>
+        <input name="submit" type="submit" value="Submit">
+    </label>
+</form>
+</div>
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>

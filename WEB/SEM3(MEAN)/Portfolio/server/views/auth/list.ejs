@@ -1,0 +1,41 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+  <!--Main Content-->
+<main class="container">
+<div class="row">
+    <div class="offset-md-1 col-md-11">
+        <h1><%= title %></h1>
+        <br>
+        <table class="table table-bordered table-striped table-hover">
+            <!-- Header Row -->
+                <tr>
+                    <th class="text-center col-2">Contact Name</th>
+                    <th class="text-center col-2">Contact Number</th>
+                    <th class="text-center col-1">Email</th>
+                    <th class="text-center col-1"></th>
+                    <th class="text-center col-1"></th>
+                </tr>
+            <!-- Repeatable Template Row -->
+            <% for(let count = 0; count < UserList.length; count++){ %>
+                <tr>
+                        <td class="text-center col-2"><%= UserList[count].displayName %></td>
+                        <td class="text-center col-2"><%= UserList[count].phone %></td>
+                        <td class="text-center col-1"><%= UserList[count].email %></td>
+                        <td class="text-center col-1">
+                            <a href="/users/update/<%= UserList[count]._id %>" class="btn btn-primary btn-sm">
+                            <i class="fas fa-pen"> Update </i></a>
+                        </td>
+                        <td class="text-center col-1">
+                            <a href="/users/delete/<%= UserList[count]._id %>" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash-alt"> Delete </i></a>
+                        </td>
+                </tr>
+            <% } %>
+        </table>
+    </div>
+</div>
+</main>
+<%- include ../partials/bottom_nav.ejs %>
+
+<%- include ../partials/footer.ejs %>

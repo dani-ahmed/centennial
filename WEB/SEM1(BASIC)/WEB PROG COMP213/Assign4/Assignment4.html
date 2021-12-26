@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<!-- -->
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8">
+    <title>UTSC Continuing Education Course/Instructor Evaluation</title>
+    <link href="UTSCFormStyles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="fullForm">
+        <header>
+            <a href="https://www.utsc.utoronto.ca/home/"><img src="images/UTSC_logo.jpg" width="980" height="300" /></a>
+            <h1>Continuing Education Course/Instructor Evaluation</h1>
+            <h3>Please read each statement carefully and answer to your best ability. Only one answer is required for each question.</h3>
+        </header>
+        <label>Course Name/Code:</label>
+        <input name="courseName" size="25" type="text"><br>
+        <label>Semester:</label>
+        <input name="semester" type="radio" value="Fall">Fall
+        <input name="semester" type="radio" value="Winter">Winter
+        <input name="semester" type="radio" value="SpringSummer">Spring/Summer<br>
+        <label>Year:</label>
+        <input name="year" size="4" type="text"><br>
+        <label>Instructor:</label>
+        <input name="year" size="25" type="text"><br>
+        <main>
+            <form action="mailto:utsc.admissions@utoronto.ca" method="post">
+                <fieldset>
+                    <legend><h1>Instructor</h1></legend>
+                    <label>How would you rate the instructor's:</label><br />
+                    <br>
+                    <label>1. knowledge of subject?</label>
+                    <input name="ques1" type="radio" value="Excet">Excellent
+                    <input name="ques1" type="radio" value="Good" />Good
+                    <input name="ques1" type="radio" value="Fair">Fair
+                    <input name="ques1" type="radio" value="NotS">Not Satisfactory<br>
+                    <label>2. helpfulness?</label>
+                    <input name="ques2" type="radio" value="Excet">Excellent
+                    <input name="ques2" type="radio" value="Good" />Good
+                    <input name="ques2" type="radio" value="Fair">Fair
+                    <input name="ques2" type="radio" value="NotS">Not Satisfactory<br>
+                    <label>3. courtesy and respect for students?</label>
+                    <input name="ques3" type="radio" value="Excet">Excellent
+                    <input name="ques3" type="radio" value="Good" />Good
+                    <input name="ques3" type="radio" value="Fair">Fair
+                    <input name="ques3" type="radio" value="NotS">Not Satisfactory<br>
+                    <label>4. communication skills?</label>
+                    <input name="ques4" type="radio" value="Excet">Excellent
+                    <input name="ques4" type="radio" value="Good" />Good
+                    <input name="ques4" type="radio" value="Fair">Fair
+                    <input name="ques4" type="radio" value="NotS">Not Satisfactory<br>
+                    <label>5. overall performance?</label>
+                    <input name="ques5" type="radio" value="Excet">Excellent
+                    <input name="ques5" type="radio" value="Good" />Good
+                    <input name="ques5" type="radio" value="Fair">Fair
+                    <input name="ques5" type="radio" value="NotS">Not Satisfactory<br>
+                </fieldset>
+                <fieldset>
+                    <legend><h1>Course</h1></legend>
+                    <label>6. How would you rate the course material?</label>
+                    <input name="ques6" type="radio" value="Excet">Excellent
+                    <input name="ques6" type="radio" value="Good">Good
+                    <input name="ques6" type="radio" value="Fair">Fair
+                    <input name="ques6" type="radio" value="NotS">Not Satisfactory<br /><br />
+                    <label>7. How well did this course meet your expectations?</label>
+                    <input name="ques7" type="radio" value="Excet">Excellent
+                    <input name="ques7" type="radio" value="Good" />Good
+                    <input name="ques7" type="radio" value="Fair">Fair
+                    <input name="ques7" type="radio" value="NotS">Not Satisfactory<br><br />
+                    <label>8. How well would you rate the course(overall)?</label>
+                    <input name="ques8" type="radio" value="Excet">Excellent
+                    <input name="ques8" type="radio" value="Good" />Good
+                    <input name="ques8" type="radio" value="Fair">Fair
+                    <input name="ques8" type="radio" value="NotS">Not Satisfactory<br>
+                </fieldset>
+                <fieldset>
+                    <legend><h1>General Information</h1></legend>
+                    <label>9. Was the course outline reviewed/explained at the beginning of your course? </label>
+                    <input name="ques9" type="radio" value="Yes">Yes
+                    <input name="ques9" type="radio" " value="No" />No
+                    <input name="ques9" type="radio" value="NotSure">Not Sure<br>
+                    <br />
+                    <label>10. Would you recommend this course to a friend with the same interests?</label>
+                    <input name="ques10" type="radio" value="Yes">Yes
+                    <input name="ques10" type="radio" value="No" />No
+                    <input name="ques10" type="radio" value="NotSure">Not Sure<br>
+                </fieldset>
+                <fieldset>
+                    <legend><h1>Any other comments:</h1></legend>
+                    <label>11. What is the best thing about this course?</label>
+                    <input name="ques11" type="text" size="60" /><br />
+                    <label>12. How can we improve this course?</label>
+                    <input name="ques12" type="text" size="60" /><br />
+                    <label>13.Other:</label>
+                    <textarea cols="50" name="txtSpecialRequests" rows="7" tabindex="39"></textarea><br>
+                    <label>
+                        <input name="submit" type="submit" value="Submit">
+                    </label>
+                    <input name="clear" type="reset" value="Clear">
+
+                </fieldset>
+            </form>
+            <h2>Thank you! We pay attention to your feedback!</h2>
+            <h3>Web: <a href="https://www.utsc.utoronto.ca/home/">https://www.utsc.utoronto.ca/home/</a></h3>
+            <h3>Email: <a href="mailto:utsc.admissions@utoronto.ca">utsc.admissions@utoronto.ca</a></h3>
+        </main>
+     </div>
+</body>
+
+</html>

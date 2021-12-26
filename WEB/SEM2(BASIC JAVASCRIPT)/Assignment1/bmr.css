@@ -1,0 +1,20 @@
+﻿
+body {
+    text-align: center;
+    width: 800px;
+    color: blue;
+    background-color: white;
+    margin: auto;
+    font-family: 'Jockey One';
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+label{
+    font-size:20px;
+}
+#gender,#age,#height,#weight{
+    width:100px;
+}
